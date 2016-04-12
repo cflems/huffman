@@ -1,0 +1,25 @@
+[ COMPILING ]
+If you have gcc installed, just use make and the program will compile
+normally. Otherwise just compile all the c files included into one
+executable.
+
+make => compiles code into an executable
+make clean => removes executable and all .huff and .dhuff files
+make debug => compiles the code in debug mode, usable with gdb
+
+
+[ ENCODING A FILE ]
+./hufftree -e -i [input file] -o [output file]
+./hufftree -e <[input file] >[output file]
+
+or any combination of the above methods to specify the file names.
+
+[ DECODING A FILE ]
+./hufftree -d -i [input file] -o [output file]
+./hufftree -d <[input file] >[output file]
+
+or any combination of the above methods.
+
+
+[ NOTES ]
+This program is completely functional. One file can be compressed, moved, and decompressed into the same exact file. Binary files are fully supported, although images that are already compressed will most likely expand in size when compressed.
