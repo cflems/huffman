@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "hufftree.h"
-typedef int flag;
+typedef int flag; // flags are booleans
 #define true 1
 #define false 0
 
